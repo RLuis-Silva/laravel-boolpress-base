@@ -18,3 +18,6 @@ Route::get('/', 'StaticPageController@home')->name('homepage');
 
 // About
 Route::get('/About', 'StaticPageController@about') ->name('about');
+
+// rotta controller 'post' di tipo resource (crud)
+Route::resource('posts', 'PostController');
