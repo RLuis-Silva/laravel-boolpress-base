@@ -13,6 +13,9 @@
             <li>
                 <a class="nav-link" href="{{ route('about')}}">About</a>
             </li>
+            <li>
+                <a class="nav-link" href="{{ route('posts.index')}}">Blog</a>
+            </li>
           </ul>
          
         </div>
