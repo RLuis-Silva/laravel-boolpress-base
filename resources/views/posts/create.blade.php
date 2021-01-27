@@ -3,6 +3,18 @@
     <div class="container mb-5">
         <h1>crea un nuovo post!</h1>
 
+        {{-- se errors is true --}}
+        @if ($errors->any() )
+            <div class="alert alert-danger">
+                <ul>
+                    @foreach ($errors as $error)
+                        <li>{{ $error }}</li>
+                    @endforeach
+                </ul>
+            </div>
+        @endif
+
+
         <form action="{{ route('posts.store') }}" method="POST" enctype="multipart/form-data">
             @csrf
             @method('POST')
