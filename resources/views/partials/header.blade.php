@@ -16,6 +16,9 @@
             <li>
                 <a class="nav-link" href="{{ route('posts.index')}}">Blog</a>
             </li>
+            <li>
+                <a class="nav-link" href="{{ route('posts.create')}}">New post</a>
+            </li>
           </ul>
          
         </div>
